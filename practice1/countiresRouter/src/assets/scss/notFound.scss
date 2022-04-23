@@ -1,0 +1,14 @@
+@import 'variable';
+@import 'mixin';
+
+.notFound {
+    padding: 4rem 1rem;
+    color: $White;
+    overflow-y: hidden;
+    @include for-mobile-up {
+        padding: 4rem 4rem;
+    }
+    @include for-desktop-up {
+        padding: 4rem 6rem;
+    }
+}

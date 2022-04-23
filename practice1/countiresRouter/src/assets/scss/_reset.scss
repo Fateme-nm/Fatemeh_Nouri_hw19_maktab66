@@ -1,0 +1,25 @@
+@import 'variable';
+
+.dark {
+    .text-color, &.text-color {
+        color: $White;
+    }
+    .elements-color, &.elements-color {
+        background-color: $Dark_Blue;
+    }
+    &.background-color {
+        background-color: $Very_Dark_Blue;
+    }
+}
+
+.light {
+    .text-color, &.text-color {
+        color: $Very_Dark_Blue_Text;
+    }
+    .elements-color, &.elements-color {
+        background-color: $White;
+    }
+    &.background-color {
+        background-color: $Very_Light_Gray;
+    }
+}

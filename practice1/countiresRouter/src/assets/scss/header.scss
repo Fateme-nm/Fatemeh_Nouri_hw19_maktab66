@@ -1,0 +1,51 @@
+@import 'variable';
+@import 'mixin';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease-out;
+    box-shadow: rgb(0 0 0 / 15%) 0px 0px 10px 0px;
+    font-size: 1rem;
+    padding: 2rem 1rem;
+    @include for-mobile-up {
+        padding: 2rem 4rem;
+        font-size: 1.1rem;
+    }
+    @include for-tablet-landscape-up {
+        font-size: 1.3rem;
+    }
+    @include for-desktop-up {
+        padding: 2rem 6rem;
+    }
+
+    .header-title {
+        font-weight: $medium_weight;
+        font-size: inherit;
+    }
+
+    .theme-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .theme-icon {
+        line-height: 0;
+        font-size: inherit;
+    }
+
+    .theme-title {
+        font-weight: $bold_weight;
+        margin-left: 0.5rem;
+        font-size: 0.75rem;
+        @include for-mobile-up {
+            font-size: 0.8rem;
+        }
+        @include for-tablet-landscape-up {
+            font-size: $homepage_items_size;
+        }
+    }
+}
